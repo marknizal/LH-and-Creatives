@@ -7,14 +7,6 @@ const ContainerWrapper = styled.div`
   margin: 0 auto;
   overflow: hidden;
   margin-top: 50px;
-
-  ${BREAKPOINTS.TABLET} {
-    padding: 0 20px;
-  }
-
-  ${BREAKPOINTS.MOBILE} {
-    padding: 0 20px;
-  }
 `;
 
 const Container = ({ children }) => {

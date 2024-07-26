@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Container from "../../Components/Container/Container";
 import {
+  Title,
   CarouselContainer,
   CarouselInner,
   CarouselImage,
@@ -37,7 +38,9 @@ const Carousel = () => {
   return (
     <>
       <Container>
-        <h1>Carousel</h1>
+        <Title>
+          <h1>Carousel</h1>
+        </Title>
       </Container>
       <CarouselContainer>
         <CarouselInner

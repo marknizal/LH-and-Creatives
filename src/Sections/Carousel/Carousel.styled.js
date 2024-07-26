@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import BREAKPOINTS from "../../Themes/Breakpoints";
 
+export const Title = styled.div`
+  padding: 0 20px;
+`;
+
 export const CarouselContainer = styled.div`
   position: relative;
   width: 100%;

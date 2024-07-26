@@ -6,7 +6,7 @@ const ContainerWrapper = styled.div`
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 40px;
 `;
 
 const Container = ({ children }) => {

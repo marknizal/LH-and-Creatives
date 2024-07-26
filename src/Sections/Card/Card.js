@@ -5,7 +5,12 @@ import styled from "styled-components";
 import BREAKPOINTS from "../../Themes/Breakpoints";
 
 const Wrapper = styled.div`
-  padding: 0 20px;
+  ${BREAKPOINTS.MOBILE} {
+    padding: 0 20px;
+  }
+  h3 {
+    margin-bottom: 18px;
+  }
 `;
 
 const CardLists = styled.div`
@@ -46,7 +51,6 @@ const CardItem = styled.div`
   }
 `;
 
-// Example data for cards
 const cardData = [
   {
     id: 1,
@@ -94,8 +98,8 @@ const Card = () => {
               </CardItem>
             ))}
           </CardLists>
+          <MoreCards />
         </Wrapper>
-        <MoreCards />
       </Container>
     </>
   );

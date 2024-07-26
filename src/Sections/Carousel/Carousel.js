@@ -38,9 +38,7 @@ const Carousel = () => {
   return (
     <>
       <Container>
-        <Title>
-          <h1>Carousel</h1>
-        </Title>
+        <Title>Carousel</Title>
       </Container>
       <CarouselContainer>
         <CarouselInner

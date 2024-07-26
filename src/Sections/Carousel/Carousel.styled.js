@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import BREAKPOINTS from "../../Themes/Breakpoints";
 
-export const Title = styled.div`
-  padding: 0 20px;
+export const Title = styled.h1`
+  ${BREAKPOINTS.MOBILE} {
+    padding: 0 20px;
+  }
 `;
 
 export const CarouselContainer = styled.div`
@@ -26,11 +28,12 @@ export const Button = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: white;
+  opacity: 70%;
+  color: black;
   border: none;
-  padding: 10px;
-  border-radius: 20%;
+  padding: 7px 11px;
+  border-radius: 50%;
   cursor: pointer;
   z-index: 1;
 

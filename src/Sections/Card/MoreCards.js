@@ -3,7 +3,7 @@ import styled from "styled-components";
 import BREAKPOINTS from "../../Themes/Breakpoints";
 
 const Wrapper = styled.div`
-  padding: 0 20px;
+  padding: 0;
 `;
 
 const CardLists = styled.div`

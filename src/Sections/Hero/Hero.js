@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid lightgray;
 `;
 
 const HeroWrapper = styled.div`

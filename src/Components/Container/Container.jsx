@@ -6,6 +6,11 @@ const ContainerWrapper = styled.div`
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  margin-top: 50px;
+
+  ${BREAKPOINTS.TABLET} {
+    padding: 0 20px;
+  }
 
   ${BREAKPOINTS.MOBILE} {
     padding: 0 20px;

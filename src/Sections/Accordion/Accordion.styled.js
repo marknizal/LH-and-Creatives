@@ -17,10 +17,6 @@ export const AccordionHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  &:hover {
-    background: #e0e0e0;
-  }
 `;
 
 export const AccordionContent = styled.div`

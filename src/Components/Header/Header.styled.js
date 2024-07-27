@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.div`
   padding: 8px 38px;
 
   ${BREAKPOINTS.MOBILE} {
-    padding: 8px 24px;
+    padding: 14px 24px;
   }
 `;
 

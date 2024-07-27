@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import BREAKPOINTS from "../../Themes/Breakpoints";
 
 const ContainerWrapper = styled.div`
   max-width: 1080px;

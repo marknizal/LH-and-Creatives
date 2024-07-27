@@ -8,6 +8,9 @@ import {
   ContactButton,
   MenuToggle,
 } from "./Header.styled";
+import { MdMenu } from "react-icons/md";
+import { IoMdClose } from "react-icons/io";
+import icon from "../../Assets/Images/recruit-icon.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +21,7 @@ const Header = () => {
     { href: "#home", label: "About" },
     { href: "#about", label: "Service" },
     { href: "#services", label: "Access" },
-    { href: "#portfolio", label: "Recruit" },
+    { href: "#portfolio", label: "Recruit", icon: icon },
   ];
 
   return (
@@ -32,12 +35,17 @@ const Header = () => {
           {navLinks.map((link, index) => (
             <NavLink key={index} href={link.href}>
               {link.label}
+              {link.icon && (
+                <img src={link.icon} alt="icon" style={{ marginLeft: "8px" }} />
+              )}
             </NavLink>
           ))}
           <ContactButton>Contact</ContactButton>
         </NavbarItems>
       </Leftside>
-      <MenuToggle onClick={toggleMenu}>{isMenuOpen ? "✖" : "☰"}</MenuToggle>
+      <MenuToggle onClick={toggleMenu}>
+        {isMenuOpen ? <IoMdClose /> : <MdMenu />}
+      </MenuToggle>
     </HeaderWrapper>
   );
 };

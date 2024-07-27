@@ -6,6 +6,8 @@ import {
   SectionItem,
   CardTitle,
 } from "./Section.styled";
+import image1 from "../../Assets/Images/section-img1.png";
+import image2 from "../../Assets/Images/section-img2.png";
 
 const Section = () => {
   return (
@@ -15,7 +17,7 @@ const Section = () => {
           <h1>Section</h1>
           <SectionLists>
             <SectionItem>
-              <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" />
+              <img src={image1} alt="image1" />
               <CardTitle>
                 <h2>Card Title</h2>
                 <p>
@@ -24,7 +26,7 @@ const Section = () => {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.{" "}
+                  dolore eu fugiat nulla pariatur.
                 </p>
               </CardTitle>
             </SectionItem>
@@ -37,10 +39,10 @@ const Section = () => {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.{" "}
+                  dolore eu fugiat nulla pariatur.
                 </p>
               </CardTitle>
-              <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" />
+              <img src={image2} alt="image2" />
             </SectionItem>
           </SectionLists>
         </Wrapper>

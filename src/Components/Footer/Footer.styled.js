@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BREAKPOINTS from "../../Themes/Breakpoints";
 
 export const Wrapper = styled.div`
-  background-color: yellow;
+  background-color: #FFF000;
   padding: 18px;
   text-align: center;
   align-items: center;

@@ -1,80 +1,36 @@
 import React from "react";
 import Container from "../../Components/Container/Container";
 import MoreCards from "./MoreCards";
-import styled from "styled-components";
-import BREAKPOINTS from "../../Themes/Breakpoints";
 
-const Wrapper = styled.div`
-  padding: 0 20px;
-  h3 {
-    margin-bottom: 18px;
-  }
-`;
+import image1 from "../../Assets/Images/card-4col-1.png";
+import image2 from "../../Assets/Images/card-4col-2.png";
+import image3 from "../../Assets/Images/card-4col-3.png";
+import image4 from "../../Assets/Images/card-4col-4.png";
 
-const CardLists = styled.div`
-  align-items: center;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-
-  ${BREAKPOINTS.DESKTOP} {
-    grid-template-columns: repeat(4);
-  }
-  ${BREAKPOINTS.TABLET} {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  ${BREAKPOINTS.MOBILE} {
-    grid-template-columns: repeat(2, 1fr);
-  }
-`;
-
-const CardItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding-bottom: 20px;
-
-  img {
-    width: 100%;
-  }
-  h3,
-  p {
-    margin: 0;
-  }
-
-  ${BREAKPOINTS.MOBILE} {
-    width: 100%;
-  }
-`;
+import { Wrapper, CardLists, CardItem } from "./Card.styled";
 
 const cardData = [
   {
     id: 1,
-    imgSrc:
-      "https://burst.shopifycdn.com/photos/photo-of-a-cityscape-with-a-ferris-wheel.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+    imgSrc: image1,
     title: "Card Title 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   },
   {
     id: 2,
-    imgSrc:
-      "https://burst.shopifycdn.com/photos/photo-of-a-cityscape-with-a-ferris-wheel.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+    imgSrc: image2,
     title: "Card Title 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   },
   {
     id: 3,
-    imgSrc:
-      "https://burst.shopifycdn.com/photos/photo-of-a-cityscape-with-a-ferris-wheel.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+    imgSrc: image3,
     title: "Card Title 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   },
   {
     id: 4,
-    imgSrc:
-      "https://burst.shopifycdn.com/photos/photo-of-a-cityscape-with-a-ferris-wheel.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+    imgSrc: image4,
     title: "Card Title 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   },

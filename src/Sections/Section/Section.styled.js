@@ -18,7 +18,7 @@ export const SectionItem = styled.div`
   gap: 24px;
 
   img {
-    width: 50%;
+    width: 45%;
 
     ${BREAKPOINTS.MOBILE} {
       width: 100%;
@@ -27,6 +27,12 @@ export const SectionItem = styled.div`
 
   ${BREAKPOINTS.MOBILE} {
     flex-direction: column;
+  }
+
+  &:nth-child(2) {
+    ${BREAKPOINTS.MOBILE} {
+      flex-direction: column-reverse;
+    }
   }
 `;
 

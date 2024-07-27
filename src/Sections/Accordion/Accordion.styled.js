@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import BREAKPOINTS from "../../Themes/Breakpoints";
 
 export const Wrapper = styled.div`
   padding: 0 20px;
@@ -27,4 +26,8 @@ export const AccordionContent = styled.div`
 
 export const AccordionIcon = styled.span`
   font-size: 12px;
+
+  img {
+    width: 14px;
+  }
 `;

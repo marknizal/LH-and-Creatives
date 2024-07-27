@@ -7,6 +7,8 @@ import {
   AccordionContent,
   AccordionIcon,
 } from "./Accordion.styled";
+import image1 from "../../Assets/Images/arrow-up.png";
+import image2 from "../../Assets/Images/arrow-down.png";
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +21,9 @@ const AccordionItem = ({ title, content }) => {
     <AccordionList>
       <AccordionHeader onClick={toggleAccordion}>
         {title}
-        <AccordionIcon>{isOpen ? "-" : "+"}</AccordionIcon>
+        <AccordionIcon>
+          <img src={isOpen ? image1 : image2} alt="accordion icon" />
+        </AccordionIcon>
       </AccordionHeader>
       <AccordionContent isOpen={isOpen}>{content}</AccordionContent>
     </AccordionList>

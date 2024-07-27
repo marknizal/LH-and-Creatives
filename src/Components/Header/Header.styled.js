@@ -4,7 +4,7 @@ import BREAKPOINTS from "../../Themes/Breakpoints";
 export const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
-  background-color: yellow;
+  background-color: #fff000;
   padding: 8px 38px;
 
   ${BREAKPOINTS.MOBILE} {
@@ -37,7 +37,7 @@ export const NavbarItems = styled.div`
     position: absolute;
     top: 50px;
     right: 0;
-    background: yellow;
+    background: #fff000;
     width: 100%;
     padding: 32px 0;
   }
@@ -49,10 +49,14 @@ export const NavLink = styled.a`
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
+
+  img {
+    width: 15px;
+  }
 `;
 
 export const ContactButton = styled.button`
-  background-color: red;
+  background-color: #e3007f;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
@@ -73,6 +77,7 @@ export const MenuToggle = styled.div`
   cursor: pointer;
   display: none;
   margin-left: auto;
+  font-size: 28px;
 
   ${BREAKPOINTS.MOBILE} {
     display: flex;

@@ -22,36 +22,24 @@ export const CarouselImage = styled.img`
   margin: 0 5px;
 `;
 
-export const Button = styled.button`
+export const Button = styled.div`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: white;
-  opacity: 70%;
-  color: black;
-  border: none;
-  padding: 7px 11px;
-  border-radius: 50%;
+  opacity: 80%;
   cursor: pointer;
   z-index: 1;
 
-  &:focus {
-    outline: none;
+  img {
+    width: 50px;
   }
-`;
 
-export const PrevButton = styled(Button)`
-  left: 100px;
+  ${(props) => (props.left ? "left: 150px;" : "right: 150px;")}
 
-  ${BREAKPOINTS.MOBILE} {
-    left: 20px;
+  ${BREAKPOINTS.TABLET} {
+    ${(props) => (props.left ? "left: 15px;" : "right: 15px;")}
   }
-`;
-
-export const NextButton = styled(Button)`
-  right: 100px;
-
   ${BREAKPOINTS.MOBILE} {
-    right: 20px;
+    ${(props) => (props.left ? "left: 15px;" : "right: 15px;")}
   }
 `;

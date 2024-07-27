@@ -1,61 +1,26 @@
 import React from "react";
-import styled from "styled-components";
-import BREAKPOINTS from "../../Themes/Breakpoints";
+import { MoreCardLists, CardItem } from "./Card.styled";
 
-const CardLists = styled.div`
-  align-items: center;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-
-  ${BREAKPOINTS.DESKTOP} {
-    grid-template-columns: repeat(3);
-  }
-
-  ${BREAKPOINTS.MOBILE} {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`;
-
-const CardItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding-bottom: 20px;
-
-  img {
-    width: 100%;
-  }
-  h3,
-  p {
-    margin: 0;
-  }
-
-  ${BREAKPOINTS.MOBILE} {
-    width: 100%;
-  }
-`;
+import image1 from "../../Assets/Images/card-3col-1.png";
+import image2 from "../../Assets/Images/card-3col-2.png";
+import image3 from "../../Assets/Images/card-3col-3.png";
 
 const cardData = [
   {
     id: 1,
-    imgSrc:
-      "https://burst.shopifycdn.com/photos/photo-of-a-cityscape-with-a-ferris-wheel.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+    imgSrc: image1,
     title: "Card Title 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   },
   {
     id: 2,
-    imgSrc:
-      "https://burst.shopifycdn.com/photos/photo-of-a-cityscape-with-a-ferris-wheel.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+    imgSrc: image2,
     title: "Card Title 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   },
   {
     id: 3,
-    imgSrc:
-      "https://burst.shopifycdn.com/photos/photo-of-a-cityscape-with-a-ferris-wheel.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+    imgSrc: image3,
     title: "Card Title 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   },
@@ -65,7 +30,7 @@ const MoreCards = () => {
   return (
     <>
       <h3>3 column card on PC</h3>
-      <CardLists>
+      <MoreCardLists>
         {cardData.map(({ id, imgSrc, title, description }) => (
           <CardItem key={id}>
             <img src={imgSrc} alt={title} />
@@ -73,7 +38,7 @@ const MoreCards = () => {
             <p>{description}</p>
           </CardItem>
         ))}
-      </CardLists>
+      </MoreCardLists>
     </>
   );
 };

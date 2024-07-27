@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BREAKPOINTS from "../../Themes/Breakpoints";
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -22,6 +23,16 @@ export const HeroWrapper = styled.div`
   }
 
   h1 {
-    font-size: 70px;
+    font-size: 90px;
+    ${BREAKPOINTS.MOBILE} {
+      font-size: 70px;
+    }
+  }
+
+  h2 {
+    font-size: 36px;
+    ${BREAKPOINTS.MOBILE} {
+      font-size: 28px;
+    }
   }
 `;

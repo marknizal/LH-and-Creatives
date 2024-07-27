@@ -18,10 +18,10 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { href: "#home", label: "About" },
-    { href: "#about", label: "Service" },
-    { href: "#services", label: "Access" },
-    { href: "#portfolio", label: "Recruit", icon: icon },
+    { href: "#about", label: "About" },
+    { href: "#service", label: "Service" },
+    { href: "#access", label: "Access" },
+    { href: "#recruit", label: "Recruit", icon: icon },
   ];
 
   return (

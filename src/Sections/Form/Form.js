@@ -21,7 +21,7 @@ const Forms = () => {
     email: "",
     option: "",
     radio: "",
-    checkboxs: [],
+    checkboxes: [],
   });
 
   const handleChange = (e) => {
@@ -29,9 +29,9 @@ const Forms = () => {
     if (type === "checkbox") {
       setFormData((prevData) => ({
         ...prevData,
-        checkboxs: checked
-          ? [...prevData.checkboxs, value]
-          : prevData.checkboxs.filter((checkbox) => checkbox !== value),
+        checkboxes: checked
+          ? [...prevData.checkboxes, value]
+          : prevData.checkboxes.filter((checkbox) => checkbox !== value),
       }));
     } else {
       setFormData({ ...formData, [name]: value });
@@ -128,7 +128,7 @@ const Forms = () => {
                   type="checkbox"
                   name="checkbox"
                   value={value}
-                  checked={formData.checkboxs.includes(value)}
+                  checked={formData.checkboxes.includes(value)}
                   onChange={handleChange}
                 />
                 {value}

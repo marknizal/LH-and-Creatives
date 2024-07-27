@@ -1,46 +1,11 @@
 import React from "react";
 import Container from "../../Components/Container/Container";
-import styled from "styled-components";
-import BREAKPOINTS from "../../Themes/Breakpoints";
-
-const Wrapper = styled.div`
-  ${BREAKPOINTS.MOBILE} {
-    padding: 0 20px;
-  }
-`;
-
-const SectionLists = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-`;
-
-const SectionItem = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-
-  img {
-    width: 50%;
-
-    ${BREAKPOINTS.MOBILE} {
-      width: 100%;
-    }
-  }
-
-  ${BREAKPOINTS.MOBILE} {
-    flex-direction: column;
-  }
-`;
-const CardTitle = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  h2 {
-    margin: 0;
-  }
-`;
+import {
+  Wrapper,
+  SectionLists,
+  SectionItem,
+  CardTitle,
+} from "./Section.styled";
 
 const Section = () => {
   return (

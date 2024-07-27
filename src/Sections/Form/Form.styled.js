@@ -5,10 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-
-  ${BREAKPOINTS.MOBILE} {
-    padding: 0 20px;
-  }
+  padding: 0 20px;
 `;
 
 export const FormContainer = styled.div`
@@ -66,6 +63,7 @@ export const Input = styled.input`
 
 export const Select = styled.select`
   border: 1px solid #ccc;
+  background-color: white;
   font-size: 16px;
   width: 250px;
 

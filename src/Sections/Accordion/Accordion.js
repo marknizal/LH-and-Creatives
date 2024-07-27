@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Container from "../../Components/Container/Container";
 import {
   Wrapper,
+  AccordionList,
   AccordionHeader,
   AccordionContent,
   AccordionIcon,
-  Title,
 } from "./Accordion.styled";
 
 const AccordionItem = ({ title, content }) => {
@@ -16,13 +16,13 @@ const AccordionItem = ({ title, content }) => {
   };
 
   return (
-    <Wrapper>
+    <AccordionList>
       <AccordionHeader onClick={toggleAccordion}>
         {title}
         <AccordionIcon>{isOpen ? "-" : "+"}</AccordionIcon>
       </AccordionHeader>
       <AccordionContent isOpen={isOpen}>{content}</AccordionContent>
-    </Wrapper>
+    </AccordionList>
   );
 };
 
@@ -57,16 +57,18 @@ const Accordion = () => {
 
   return (
     <Container>
-      <Title>Accordion</Title>
-      <div>
-        {items.map((item, index) => (
-          <AccordionItem
-            key={index}
-            title={item.title}
-            content={item.content}
-          />
-        ))}
-      </div>
+      <Wrapper>
+        <h1>Accordion</h1>
+        <div>
+          {items.map((item, index) => (
+            <AccordionItem
+              key={index}
+              title={item.title}
+              content={item.content}
+            />
+          ))}
+        </div>
+      </Wrapper>
     </Container>
   );
 };

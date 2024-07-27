@@ -2,9 +2,7 @@ import styled from "styled-components";
 import BREAKPOINTS from "../../Themes/Breakpoints";
 
 export const Title = styled.h1`
-  ${BREAKPOINTS.MOBILE} {
-    padding: 0 20px;
-  }
+  padding: 0 20px;
 `;
 
 export const CarouselContainer = styled.div`

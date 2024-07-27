@@ -1,16 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-
-const Wrapper = styled.div`
-  background-color: yellow;
-  padding: 18px;
-  text-align: center;
-  align-items: center;
-
-  p {
-    margin: 0;
-  }
-`;
+import { Wrapper } from "./Footer.styled";
 
 const Footer = () => {
   return (

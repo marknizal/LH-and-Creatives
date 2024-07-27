@@ -5,9 +5,7 @@ import styled from "styled-components";
 import BREAKPOINTS from "../../Themes/Breakpoints";
 
 const Wrapper = styled.div`
-  ${BREAKPOINTS.MOBILE} {
-    padding: 0 20px;
-  }
+  padding: 0 20px;
   h3 {
     margin-bottom: 18px;
   }

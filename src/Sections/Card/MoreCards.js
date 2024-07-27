@@ -2,10 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import BREAKPOINTS from "../../Themes/Breakpoints";
 
-const Wrapper = styled.div`
-  padding: 0;
-`;
-
 const CardLists = styled.div`
   align-items: center;
   width: 100%;
@@ -68,18 +64,16 @@ const cardData = [
 const MoreCards = () => {
   return (
     <>
-      <Wrapper>
-        <h3>3 column card on PC</h3>
-        <CardLists>
-          {cardData.map(({ id, imgSrc, title, description }) => (
-            <CardItem key={id}>
-              <img src={imgSrc} alt={title} />
-              <h3>{title}</h3>
-              <p>{description}</p>
-            </CardItem>
-          ))}
-        </CardLists>
-      </Wrapper>
+      <h3>3 column card on PC</h3>
+      <CardLists>
+        {cardData.map(({ id, imgSrc, title, description }) => (
+          <CardItem key={id}>
+            <img src={imgSrc} alt={title} />
+            <h3>{title}</h3>
+            <p>{description}</p>
+          </CardItem>
+        ))}
+      </CardLists>
     </>
   );
 };

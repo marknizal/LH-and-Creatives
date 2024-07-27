@@ -15,6 +15,11 @@ export const CardLists = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   ${BREAKPOINTS.DESKTOP} {
     grid-template-columns: repeat(4);
   }
@@ -34,6 +39,11 @@ export const MoreCardLists = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   ${BREAKPOINTS.DESKTOP} {
     grid-template-columns: repeat(3);
   }
@@ -52,6 +62,7 @@ export const CardItem = styled.div`
   img {
     width: 100%;
   }
+
   h3,
   p {
     margin: 0;

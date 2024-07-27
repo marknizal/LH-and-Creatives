@@ -45,11 +45,13 @@ const Card = () => {
           <h3>4 column card on PC</h3>
           <CardLists>
             {cardData.map(({ id, imgSrc, title, description }) => (
-              <CardItem key={id}>
-                <img src={imgSrc} alt={title} />
-                <h3>{title}</h3>
-                <p>{description}</p>
-              </CardItem>
+              <a key={id} href={`/card/${id}`}>
+                <CardItem>
+                  <img src={imgSrc} alt={title} />
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </CardItem>
+              </a>
             ))}
           </CardLists>
           <MoreCards />
